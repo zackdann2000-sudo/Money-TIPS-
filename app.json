@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "GreenScore",
+    "slug": "greenscore",
+    "scheme": "greenscore",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "app.greenscore.mobile",
+      "permissions": ["POST_NOTIFICATIONS"]
+    },
+    "ios": {
+      "bundleIdentifier": "app.greenscore.mobile",
+      "infoPlist": { "UIBackgroundModes": ["remote-notification"] }
+    },
+    "plugins": [
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development",
+          "smallIcons": ["./assets/notification-icon.png"]
+        }
+      ]
+    ],
+    "extra": {
+      "oneSignalAppId": "COLE_AQUI_SEU_ONESIGNAL_APP_ID",
+      "apiBaseUrl": "https://SEU-DOMINIO.com"
+    }
+  }
+}

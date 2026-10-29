@@ -1,0 +1,5 @@
+name = "onesignal-proxy"
+main = "index.js"
+compatibility_date = "2024-01-01"
+# Para usar domínio próprio (opcional):
+# route = "https://onesignal.seudominio.com/*"
